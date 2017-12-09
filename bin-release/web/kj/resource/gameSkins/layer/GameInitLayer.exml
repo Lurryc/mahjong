@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameInitLayer" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:game="game.*">
+	<e:Group id="m_gopTop" width="850" y="100" anchorOffsetX="0" horizontalCenter="0">
+		<e:Group name="m_gop0">
+			<e:Image source="majiangzi_json.pai_gai_bot1_png" y="10.64" name="m_img0"/>
+			<e:Image source="majiangzi_json.pai_gai_bot1_png" name="m_img1"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="m_gopButtom" width="850" y="469.77" anchorOffsetX="0" horizontalCenter="0">
+		<e:Group name="m_gop0">
+		<e:Image source="majiangzi_json.pai_gai_bot1_png" y="10.64" name="m_img0"/>
+		<e:Image source="majiangzi_json.pai_gai_bot1_png" name="m_img1"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="m_gopLeft" height="430" x="88.97" y="103.66">
+		<e:Group name="m_gop0">
+			<e:Image source="majiangzi_json.pai_gai_bot2_png" y="7"/>
+			<e:Image source="majiangzi_json.pai_gai_bot2_png" y="1.33"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="m_gopRight" height="430" x="1006.14" y="103.66">
+		<e:Group name="m_gop0">
+		<e:Image source="majiangzi_json.pai_gai_bot2_png" y="5"/>
+		<e:Image source="majiangzi_json.pai_gai_bot2_png" y="-7.8"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

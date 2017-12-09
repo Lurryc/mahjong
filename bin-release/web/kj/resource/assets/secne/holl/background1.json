@@ -1,0 +1,6 @@
+{"file":"background1.png","frames":{
+"hall_top_bg_png":{"x":0,"y":1284,"w":1136,"h":640,"offX":0,"offY":0,"sourceW":1136,"sourceH":640},
+"ipbg_png":{"x":1138,"y":642,"w":1136,"h":640,"offX":0,"offY":0,"sourceW":1136,"sourceH":640},
+"bg_gray":{"x":0,"y":0,"w":1136,"h":640,"offX":0,"offY":0,"sourceW":1136,"sourceH":640},
+"gh_bg_png":{"x":1138,"y":0,"w":1136,"h":640,"offX":0,"offY":0,"sourceW":1136,"sourceH":640},
+"hall_bottom_bg_png":{"x":0,"y":642,"w":1136,"h":640,"offX":0,"offY":0,"sourceW":1136,"sourceH":640}}}

@@ -1,0 +1,6 @@
+{"file":"background2.png","frames":{
+"ph_bg_pop_create_png":{"x":0,"y":0,"w":1136,"h":640,"offX":0,"offY":0,"sourceW":1136,"sourceH":640},
+"ph_bg_pop_join_png":{"x":1138,"y":0,"w":1136,"h":640,"offX":0,"offY":0,"sourceW":1136,"sourceH":640},
+"pop_bg_tx_png":{"x":0,"y":642,"w":1136,"h":640,"offX":0,"offY":0,"sourceW":1136,"sourceH":640},
+"pop_dbjl_bg_capture_png":{"x":0,"y":1284,"w":1136,"h":640,"offX":0,"offY":0,"sourceW":1136,"sourceH":640},
+"pop_pre_bg_png":{"x":1138,"y":642,"w":1136,"h":640,"offX":0,"offY":0,"sourceW":1136,"sourceH":640}}}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CreateRoom" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:game="game.*" width="1136" height="640">
+	<e:Image source="background1_json.hall_top_bg_png"/>
+	<e:RadioButton id="m_radio" x="352" y="280">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="button_json.ic_btn_add_png" source.down="button_json.ic_btn_add2_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:RadioButton>
+	<game:Button x="939.24" y="94.42">
+		<game:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="button_json.ph_btn_close_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</game:skinName>
+	</game:Button>
+</e:Skin>

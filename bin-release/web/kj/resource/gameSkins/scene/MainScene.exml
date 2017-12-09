@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HallScene" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:game="game.*">
+	<e:Image  source="pr_bg2_jpg" x="0" y="0"/>
+	<e:Group id="m_gInitGroup" width="1136" height="640" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0">
+		<game:Button id="m_btnReady" y="364" x="547">
+			<game:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="majiangzi_json.pai_right_wan7_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</game:skinName>
+		</game:Button>
+	</e:Group>
+</e:Skin>

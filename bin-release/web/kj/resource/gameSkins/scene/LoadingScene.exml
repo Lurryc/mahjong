@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoadingScene" width="1136" height="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15f800aabeb"/>
+	<e:Image source="daylight_jpg" x="0" y="0"/>
+	<e:Image  source="loading_icon_png" y="170" horizontalCenter="0"/>
+	<e:Image source="loading_progress_bg_png" y="359" horizontalCenter="0" width="362"/>
+	<e:Image id="m_imgProgressL" source="loading_progress_png" y="363" width="350" height="14" x="393"/>
+	<e:Image id="m_imgProgressR" source="loading_progress_png" y="363" width="350" height="14" x="393"/>
+</e:Skin>
