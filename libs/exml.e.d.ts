@@ -60,6 +60,10 @@ declare class CardGroupLR extends eui.Skin{
 }
 declare class CardGroupUd extends eui.Skin{
 }
+declare class MyMajiangTable extends eui.Skin{
+}
+declare class mylogin extends eui.Skin{
+}
 declare class Photo extends eui.Skin{
 }
 declare class CreateRoom extends eui.Skin{

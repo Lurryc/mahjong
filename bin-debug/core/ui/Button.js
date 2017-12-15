@@ -83,11 +83,10 @@ var game;
             var scale = 1;
             if (this.isPressed)
                 scale = 1.05;
-            this.scaleX = scale;
-            this.scaleY = scale;
+            egret.Tween.get(this).to({ scaleX: scale, scaleY: scale }, 100);
         };
         Button.prototype.fBindListener = function (scene) {
-            this.m_oListenerBind = scene;
+            this.m_oListenerBind = scene; //qs:当一个class中的数据发生改变,该class会不会重新运行
         };
         return Button;
     }(eui.Button));

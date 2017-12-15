@@ -21,6 +21,8 @@ module game {
             this.m_sName = '白' 
            else
              game.TipShow.fShow('JianCard 创建失败:value =' + value);  
+
+             
        }
 
       

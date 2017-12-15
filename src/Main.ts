@@ -1,7 +1,7 @@
 
 declare function fGetStack();
 class Main extends eui.UILayer {
-   
+
      private static s_Ins:Main;
      public m_oGameSocket:game.GameSocket;
 
@@ -108,9 +108,13 @@ class Main extends eui.UILayer {
     //创建场景界面
     //tip:核心代码处
     protected startCreateScene(): void {
+        this.addChild(new game.MyTable)
+
+
+/*
         console.warn('startCreateScene');
    
-        //储存各种数据包(吃牌数据包,加入房间数据包,打牌准备完毕数据包)
+        //初始化各种数据包(吃牌数据包,加入房间数据包,打牌准备完毕数据包)
         game.Packet.fInitPacketMap();
 
       
@@ -123,7 +127,7 @@ class Main extends eui.UILayer {
       //  var load = new game.LoadingScene();
         //this.addChild(load);
 
-        this.m_oGameLayer = new eui.UILayer;//todo:new className和new className()区别
+        this.m_oGameLayer = new eui.UILayer;//qs:new className和new className()区别
         this.addChild(this.m_oGameLayer);
 
         this.m_oDialogLayer = new eui.Group;
@@ -135,14 +139,14 @@ class Main extends eui.UILayer {
         this.m_oLoadingLayer = new eui.Group;
         this.addChild(this.m_oLoadingLayer); 
       
-
+        
       
         //this.m_oLoadingLayer.visible = false;
     
      
     
         setTimeout(function(){
-              game.GameScenenManager.fGetIns().fEnterScene(game.GameSceneName.LOG);
+              game.GameScenenManager.fGetIns().fEnterScene(game.GameSceneName.LOG);//控制每次切换场景,进行场景的加载(场景加载的入口代码)
         }, 10)
 
         var descJson = RES.getRes("cards_json");
@@ -150,7 +154,7 @@ class Main extends eui.UILayer {
         var index = 0;
         var prority = 0;
         var name;
-        for(var i in descArray)
+        for(var i in descArray)//qs:有什么用处????????
         {
             if(name != descArray[i]['value'])
                index = 0;
@@ -167,7 +171,7 @@ class Main extends eui.UILayer {
 
         var cards =   game.GameCardManager.fGetIns().m_oCards;
 
-
+*/
     }
    public GetShowTipLayer()
    {
@@ -182,7 +186,7 @@ class Main extends eui.UILayer {
 
     private m_oLoadingScene:game.LoadingScene;
 
-    public fLoadIngVisible(visi:boolean):void
+    public fLoadIngVisible(visi:boolean):void//控制是否显示显示加载进度
     {
         this.m_oLoadingLayer.visible = visi;
 

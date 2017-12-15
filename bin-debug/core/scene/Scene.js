@@ -34,6 +34,9 @@ var game;
             this.addEventListener(egret.Event.ENTER_FRAME, this.fEnterFrame, this);
             this.m_nTimeOnEnterFrame = egret.getTimer();
         };
+        Scene.prototype.fStopUpdate = function () {
+            this.removeEventListener(egret.Event.ENTER_FRAME, this.fEnterFrame, this);
+        };
         Scene.prototype.fEnterFrame = function () {
             this.fUpdate(egret.getTimer() - this.m_nTimeOnEnterFrame);
             this.m_nTimeOnEnterFrame = egret.getTimer();

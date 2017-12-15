@@ -100,42 +100,68 @@ var Main = (function (_super) {
     //创建场景界面
     //tip:核心代码处
     Main.prototype.startCreateScene = function () {
-        console.warn('startCreateScene');
-        //储存各种数据包(吃牌数据包,加入房间数据包,打牌准备完毕数据包)
-        game.Packet.fInitPacketMap();
-        egret.ExternalInterface.call("sendToNative", "message from js");
-        //   var card = game.CardBase.fCreateCard(game.CardBase.s_Type_Feng, 'w_1_0');
-        //this.m_oKeyBoard = new KeyBoard();
-        //this.m_oKeyBoard.addEventListener(KeyBoard.onkeydown,this.fKeyBoard,this);
-        //  var load = new game.LoadingScene();
-        //this.addChild(load);
-        this.m_oGameLayer = new eui.UILayer; //todo:new className和new className()区别
-        this.addChild(this.m_oGameLayer);
-        this.m_oDialogLayer = new eui.Group;
-        this.addChild(this.m_oDialogLayer);
-        game.ShowLayer.fSetDialogLayer(this.m_oDialogLayer);
-        this.m_oLoadingLayer = new eui.Group;
-        this.addChild(this.m_oLoadingLayer);
-        //this.m_oLoadingLayer.visible = false;
-        setTimeout(function () {
-            game.GameScenenManager.fGetIns().fEnterScene(game.GameSceneName.LOG);
-        }, 10);
-        var descJson = RES.getRes("cards_json");
-        var descArray = descJson.card;
-        var index = 0;
-        var prority = 0;
-        var name;
-        for (var i in descArray) {
-            if (name != descArray[i]['value'])
-                index = 0;
-            for (var j = 0; j < 4; j++) {
-                //     game.GameCardManager.fGetIns().fPushCard(descArray[i]['value'] + '_' + index, descArray[i]['type'], prority);
-                index++;
-            }
-            name = descArray[i]['value'];
-            prority++;
-        }
-        var cards = game.GameCardManager.fGetIns().m_oCards;
+        this.addChild(new game.MyTable);
+        /*
+                console.warn('startCreateScene');
+           
+                //初始化各种数据包(吃牌数据包,加入房间数据包,打牌准备完毕数据包)
+                game.Packet.fInitPacketMap();
+        
+              
+                egret.ExternalInterface.call("sendToNative", "message from js");
+              
+                //   var card = game.CardBase.fCreateCard(game.CardBase.s_Type_Feng, 'w_1_0');
+                //this.m_oKeyBoard = new KeyBoard();
+                //this.m_oKeyBoard.addEventListener(KeyBoard.onkeydown,this.fKeyBoard,this);
+               
+              //  var load = new game.LoadingScene();
+                //this.addChild(load);
+        
+                this.m_oGameLayer = new eui.UILayer;//qs:new className和new className()区别
+                this.addChild(this.m_oGameLayer);
+        
+                this.m_oDialogLayer = new eui.Group;
+              
+                this.addChild(this.m_oDialogLayer);
+            
+                game.ShowLayer.fSetDialogLayer(this.m_oDialogLayer);
+        
+                this.m_oLoadingLayer = new eui.Group;
+                this.addChild(this.m_oLoadingLayer);
+              
+                
+              
+                //this.m_oLoadingLayer.visible = false;
+            
+             
+            
+                setTimeout(function(){
+                      game.GameScenenManager.fGetIns().fEnterScene(game.GameSceneName.LOG);//控制每次切换场景,进行场景的加载(场景加载的入口代码)
+                }, 10)
+        
+                var descJson = RES.getRes("cards_json");
+                var descArray: JSON[] = descJson.card;
+                var index = 0;
+                var prority = 0;
+                var name;
+                for(var i in descArray)//qs:有什么用处????????
+                {
+                    if(name != descArray[i]['value'])
+                       index = 0;
+                    for(var j = 0; j < 4; j++)
+                    {
+                   //     game.GameCardManager.fGetIns().fPushCard(descArray[i]['value'] + '_' + index, descArray[i]['type'], prority);
+                        index ++;
+                    }
+                    name = descArray[i]['value'];
+                    
+        
+                    prority ++;
+                }
+        
+                var cards =   game.GameCardManager.fGetIns().m_oCards;
+        
+        */
     };
     Main.prototype.GetShowTipLayer = function () {
         return this.m_oDialogLayer;

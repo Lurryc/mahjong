@@ -27,7 +27,8 @@ module game
            
             this.skinName = "resource/gameSkins/scene/MainScene/PhotoScene.exml";
 
-           
+           var a = new JianCard(0, 0, 0);
+      
         }
       
 

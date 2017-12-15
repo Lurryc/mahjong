@@ -141,6 +141,7 @@ export class GameSocket extends egret.EventDispatcher{
              return ;
           if(this.m_oSocket.hasEventListener(egret.Event.CONNECT))
           {
+         //   (<any>this.m_oSocket).call(function(){this.m_oSocket.removeEventListener}, egret.Event.CONNECT, this.fOnConnect, this);
               this.m_oSocket.removeEventListener(egret.Event.CONNECT, this.fOnConnect, this)
           }
           if (this.m_oSocket.hasEventListener(egret.ProgressEvent.SOCKET_DATA)) 

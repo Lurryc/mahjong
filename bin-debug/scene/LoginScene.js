@@ -23,7 +23,8 @@ var game;
         //***********************************/
         function LoginScene() {
             var _this = _super.call(this) || this;
-            _this.skinName = "resource/gameSkins/scene/LoginScene.exml";
+            // this.skinName = "resource/gameSkins/scene/LoginScene.exml";
+            _this.skinName = "resource/gameSkins/NewFile.exml";
             return _this;
         }
         /**该场景需要加载的资源组 */
@@ -39,7 +40,8 @@ var game;
             this.m_textIptUid.x = this.width / 7 + 50;
             this.m_textIptUid.y = this.height - 80;
             this.addChild(this.m_textIptUid);
-            this.fSetClickButton(this.m_btnLogin);
+            // this.fSetClickButton(this.m_btnLogin)
+            this.fSetClickButton(this.m_btnMyLogin); //tip:doExercise
         };
         LoginScene.prototype.onChange = function () { };
         LoginScene.prototype.fOnClick = function (button) {

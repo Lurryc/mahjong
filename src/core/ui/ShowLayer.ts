@@ -88,13 +88,13 @@ module game {
             {
                 //                var dialogMask = new Rect(480,800,0);
                 var dialogMask = new eui.Image("global_ui_dialog_bg_png");
-                dialogMask.width = 480;
-                dialogMask.height = 800;
+                dialogMask.width = 1024;
+                dialogMask.height = 602;
                 //                dialogMask.alpha = 0.5;
                 dialogMask.touchEnabled = true;
                 layer.addChild(dialogMask);
                 dialog.bgMask = dialogMask;
-                //                Dialog.curDialogMask = dialogMask;
+               
             }
             layer.addChild(dialog);
         }
@@ -104,10 +104,7 @@ module game {
                 layer.removeChild(dialog.bgMask);
                 layer.removeChild(dialog);
             }
-            //            if(layer.numElements == 1)
-            //            {
-            //                layer.removeChildren();
-            //            }
+          
         }
 
         

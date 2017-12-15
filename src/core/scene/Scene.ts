@@ -31,6 +31,10 @@ module game {
             this.m_nTimeOnEnterFrame = egret.getTimer();
         }
 
+        public fStopUpdate(){
+              this.removeEventListener(egret.Event.ENTER_FRAME, this.fEnterFrame, this);
+        }
+
         private fEnterFrame()
         {
             this.fUpdate(egret.getTimer() - this.m_nTimeOnEnterFrame);

@@ -14,7 +14,7 @@ var Utils = (function () {
     */
     Utils.fResetAnchor = function (obj, anchorX, anchorY) {
         var width = obj.width, height = obj.height;
-        var _anchorX = 0.5, _anchorY = 0.5;
+        var _anchorX = 0.5, _anchorY = 0.5; //qs:定义变量之前加一个_表示什么
         if (anchorX != undefined)
             _anchorX = anchorX;
         if (anchorY != undefined)
@@ -22,12 +22,12 @@ var Utils = (function () {
         var _anchorOffsetX = _anchorX * width; //偏移长度
         var _anchorOffsetY = _anchorY * height; //偏移宽度
         if (obj instanceof eui.Label) {
-            var label = obj;
+            var label = obj; //qs:<type>????
             width = label.measuredWidth;
             height = label.measuredHeight;
         }
         var obX = obj.x, obY = obj.y;
-        var newX = obX + _anchorOffsetX - obj.anchorOffsetX;
+        var newX = obX + _anchorOffsetX - obj.anchorOffsetX; //显示对象的x偏移量 + 设置的锚点的x偏移量 - 显示对象原始的锚点的x位置
         var newY = obY + _anchorOffsetY - obj.anchorOffsetY;
         obj.anchorOffsetX = _anchorOffsetX;
         obj.anchorOffsetY = _anchorOffsetY;
@@ -35,7 +35,7 @@ var Utils = (function () {
         obj.y = newY;
     };
     Utils.fNotUsefunData = function (data) {
-        if (data == undefined || data == null || data == '')
+        if (data == undefined || data == null || data == '' || data == NaN)
             return true;
         else
             return false;
@@ -49,7 +49,7 @@ var Utils = (function () {
     };
     Utils.fClipDisplay = function (display, srcX, srcY, srcW, srcH, dstX, dstY) {
         if (!display.mask) {
-            display.mask = new egret.Rectangle();
+            display.mask = new egret.Rectangle(); //qs:其坐标是否相对于需要遮罩的对象的锚点???????
         }
         display.mask.x = srcX;
         display.mask.y = srcY;

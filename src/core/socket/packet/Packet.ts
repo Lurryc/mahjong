@@ -68,7 +68,7 @@ export class Packet
    {
      if(Packet.s_aPacketMap.length)
         return;
-       
+      //将所有的数据包放入数组中保存 
      Packet.s_aPacketMap.push([game.Packet.s_Eat, function(){return new game.C2s_EatAction}])
      Packet.s_aPacketMap.push([game.Packet.s_JoinRoom, function(){return new game.C2s_JoinRoomPacket}])
      Packet.s_aPacketMap.push([game.Packet.s_PlayHand, function(){return new game.C2s_PlayHandAction}])

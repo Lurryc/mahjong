@@ -50,7 +50,6 @@ var game;
                 pack.m_gameName = parseInt(this.m_inputGameName.text);
                 pack.m_nPayStyle = parseInt(this.m_inputPayStyle.text);
                 pack.m_nCircle = parseInt(this.m_inputCircle.text);
-                //  pack.fWrite();
                 Main.fGetIns().m_oGameSocket.fSendPkt(pack);
                 //  
             }

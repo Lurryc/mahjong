@@ -24,6 +24,7 @@ var game;
         function PhotoScene() {
             var _this = _super.call(this) || this;
             _this.skinName = "resource/gameSkins/scene/MainScene/PhotoScene.exml";
+            var a = new game.JianCard(0, 0, 0);
             return _this;
         }
         PhotoScene.prototype.fOnUICreate = function () {

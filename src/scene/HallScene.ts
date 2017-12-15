@@ -49,7 +49,7 @@ module game
         
         public fOnClick(button)
         {
-           var layer
+           var layer:ShowLayer;
           if(button == this.m_btnCreate)
           {
           /*  var readPkt:C2s_CreateRoomPacket =  <C2s_CreateRoomPacket>Packet.CreateAction(Packet.s_CreateRoom);

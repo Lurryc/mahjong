@@ -67,12 +67,12 @@ module game
           if(button == this.m_btnClose)
             this.fExit();
           else if(button == this.m_btnCreateRoom)
-          {
+          {//todo:接下来要看的内容!!!
               var pack = <C2s_CreateRoomPacket>Packet.fCreateAction(Packet.s_CreateRoom);
               pack.m_gameName = parseInt(this.m_inputGameName.text);
               pack.m_nPayStyle = parseInt(this.m_inputPayStyle.text);
               pack.m_nCircle = parseInt(this.m_inputCircle.text);
-            //  pack.fWrite();
+              
               Main.fGetIns().m_oGameSocket.fSendPkt(pack);
             //  
           }

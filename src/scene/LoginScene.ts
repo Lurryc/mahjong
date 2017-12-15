@@ -15,6 +15,8 @@ module game
       private m_textIptUid:eui.TextInput;
       private m_btnLogin:eui.Button;
 
+      private m_btnMyLogin:eui.Button;//tip:练习
+
       //***********************************/
 
        
@@ -22,8 +24,9 @@ module game
         {
             super();
              
-            this.skinName = "resource/gameSkins/scene/LoginScene.exml";
- 
+            // this.skinName = "resource/gameSkins/scene/LoginScene.exml";
+            
+            this.skinName = "resource/gameSkins/NewFile.exml"
            
         }
       
@@ -48,13 +51,16 @@ module game
             this.addChild( this.m_textIptUid);
 
 
-            this.fSetClickButton(this.m_btnLogin)
+            // this.fSetClickButton(this.m_btnLogin)
+
+            this.fSetClickButton(this.m_btnMyLogin);//tip:doExercise
         }
         
         private onChange(){}
 
         public fOnClick(button)
         {
+            
             
             if(Utils.fNotUsefunData(this.m_textIptUid.text))
               {

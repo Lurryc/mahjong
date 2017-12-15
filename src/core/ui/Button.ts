@@ -14,7 +14,7 @@ module game {
             super();
             this.once(egret.Event.ADDED_TO_STAGE,this.fOnUICreate,this)
 		}
-        protected fOnUICreate() 
+        protected fOnUICreate() //当UI层创建好后执行函数
         {
           
             if(this.m_sImageUse)
@@ -35,7 +35,7 @@ module game {
             this.addEventListener(egret.TouchEvent.TOUCH_RELEASE_OUTSIDE, this.fOnOutSide, this);
         }
         
-        private m_sImageUse: string;
+        private m_sImageUse: string;//图片资源路径名
         public fSetImage(imgName: string) 
         {
             this.m_sImageUse = imgName;
@@ -92,14 +92,13 @@ module game {
             this.isPressed = bPressed;
             var scale = 1;
             if(this.isPressed) scale = 1.05;
-            this.scaleX = scale;
-            this.scaleY = scale;
+            egret.Tween.get(this).to({scaleX:scale,scaleY:scale},100)
         }
         
         private m_oListenerBind: Scene;
         public fBindListener(scene:Scene)
         {
-            this.m_oListenerBind = scene;
+            this.m_oListenerBind = scene;//qs:当一个class中的数据发生改变,该class会不会重新运行
         }
 	}
 }

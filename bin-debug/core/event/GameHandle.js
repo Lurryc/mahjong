@@ -43,7 +43,7 @@ var game;
             this.m_aOnceMsgName = onceMsgName;
             var poster = game.Poster.Ins;
             for (var i in onceMsgName) {
-                poster.once(onceMsgName[i], onceListener, onceContext);
+                poster.once(onceMsgName[i], onceListener, onceContext); //qs:注册了一个自定义的事件,如何触发
             }
             poster = null;
         };

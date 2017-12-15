@@ -17,7 +17,7 @@
 			"name": "使用本机 Chrome 调试",
 			"type": "chrome",
 			"request": "launch",
-			"runtimeExecutable":"C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
+			"runtimeExecutable":"C:/Users/win7/AppData/Local/Google/Chrome/Application/chrome.exe",
 			"file": "index.html",
 			"useBuildInServer": true,
 			"sourceMaps": true,
